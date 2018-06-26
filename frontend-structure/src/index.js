@@ -6,21 +6,24 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import thunk from 'redux-thunk';
-import dummy from './store/reducers/dummy';
+import auth from './store/reducers/auth';
 import authors from './store/reducers/authors';
+import util from './store/reducers/util';
+import admin from './store/reducers/admin';
 import registerServiceWorker from './registerServiceWorker';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const rootReducer = combineReducers({
     author:authors,
-    dummy:dummy
+    auth,
+    util,
+    admin
 });
 const store = createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
-
 ReactDOM.render(
 <Provider store={store}>
     <BrowserRouter>
-        <App />
+        <App/>
     </BrowserRouter>
 </Provider>
 , document.getElementById('root'));

@@ -1,28 +1,39 @@
-.App {
-  text-align: center;
+
+.tablelist{
+  padding-bottom:10px;
+    
+}
+#admin-list-wrapper{
+  background-image: url('texture-background-21.jpg');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.table-div{
+  min-height:  200px;
+  max-height: 370px;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+.tablehover{
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2) ;
+}
+.tablehover:hover{
+ background-image: url('background-textures-5.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+  
+}
+thead{
+  border: 3px solid rgb(158, 158, 158);
+  
 }
 
-.App-title {
-  font-size: 1.5em;
+.modal-title{
+  margin:auto;
+  font-weight: bold;
 }
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
