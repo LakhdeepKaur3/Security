@@ -20,10 +20,16 @@ router.get('/authors', function (req, res, next) {
       else{
         res.json({"authors":authors.map((author)=>{
             return {...author,fullName:author.fullName()}
-        })});
+        }),
+        success:"true"
+        });
       }
   });
   
 });
+
+
+
+
 
 module.exports = router;

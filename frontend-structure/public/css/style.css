@@ -1,0 +1,53 @@
+.body{
+  margin:0px;
+  padding: 0px;
+}
+.side-nav{
+  border:2px solid black;
+}
+.nav-text{
+  font-size: 20px;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+.admin_header{
+    background-color: dodgerblue;
+    height:200px;
+    padding-top: 80px;
+   }
+   /* .main-nav .home {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .main-nav .dashboard {
+    font-size: 20px;
+    padding: 20px;
+  } */
+   
+/* .side-nav{
+    height: 100px;
+    padding-top: 38px;
+    font-size: 27px;
+    text-align:center;
+} */
+.jumbotron{
+  margin-bottom: 4px;
+  background-color: lavender;
+}
+
+.btn-primary{
+  border: none;
+  border-radius: 0;
+  background-color: aqua;
+  margin-right:30px;
+}
+
+.second-part{
+  background-color:green;
+}
+.vendor{
+background-color:cyan;
+height:500px;
+}
