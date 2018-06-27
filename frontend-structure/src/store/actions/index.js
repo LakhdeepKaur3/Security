@@ -2,5 +2,15 @@ export {
     fetchAuthors
 } from './author';
 export {
-    fetchDummyData
-} from './dummy';
+    registerUser,
+    loginUser,
+    logOutUser
+} from './auth';
+export {
+    showPopup,
+    closePopup
+} from './util';
+export {
+    fetchAdminList,
+    deleteAdmin
+} from './admin';
