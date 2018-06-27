@@ -57,9 +57,13 @@ class App extends Component {
           }}/>
           <PrivateRoute path="/list" exact isAuthenticated={this.props.isAuthenticated} component={AdminList}/>
           <Route path="/home" component={Home}/>
-
           <Route path="/admin" component={Admin} />
-          <Route path="/dashboard" component={Admin} />
+          <Route  path="/dashboard" component={Admin} />
+          <Route path="*" render={()=>{
+            return (
+              <div>Not Matched</div>
+            )
+          }}></Route>
         </Switch>
       </div>
     );

@@ -18,8 +18,8 @@ class Admin extends Component {
                     <Link to="/">
                         <Button bsStyle="primary">Home</Button>
                     </Link>
-                    <Link to="/dashboard">
-                        <Button bsStyle="primary">Dashbord</Button>
+                    <Link to="/admin">
+                        <Button bsStyle="primary">Dashboard</Button>
                     </Link>
                 </Jumbotron>
                 <Grid fluid >
