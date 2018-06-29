@@ -12,7 +12,7 @@ class Header extends React.Component{
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" id="HeaderNav">
             
             <div className="logo">
-                Dream Security
+            <a href="Home" style={{color:"black"}}> Dream Security</a>
             </div>
 
             <div className="nav navbar-nav flex-row justify-content-between ml-auto">
