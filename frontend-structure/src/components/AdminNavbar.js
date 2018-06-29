@@ -23,11 +23,13 @@ class AdminNavbar extends Component {
         showNavs = ()=>{
                 return this.props.navs.map((nav,index)=>{
                          return (
-                                 <Link id={index} to={nav.linkPath} >
+                                 <Link   id={index} to={nav.linkPath} >
+                                 <div className="admin-nav-link">
                                  <Nav id={nav.icon}>
                                          <NavIcon><SvgIcon size={20} icon={this.icons[nav.icon]} /></NavIcon>
                                          <NavText className="nav-text"> {nav.linkText}</NavText>
                                  </Nav>
+                                 </div>
                                  </Link>
                          )
                 });
@@ -61,7 +63,7 @@ class AdminNavbar extends Component {
                 */
               
                 return (
-                        <div className="main" style={{ background: '#2c3e50', color: '#FFF', width: 400,height:500 }}>
+                        <div className="main" style={{ background: '#2c3e50', color: '#FFF',height:500 }}>
                                 <SideNav className="side-nav" highlightColor='black' highlightBgColor='#00bcd4' defaultSelected='sales'>
                                 {this.showNavs()} 
                                         

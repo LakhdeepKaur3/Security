@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 import { Jumbotron, Grid, Row, Col, Image, Button } from 'react-bootstrap'
 import AdminNavbar from './AdminNavbar';
 import Vendor from './Vendor';
@@ -8,23 +8,26 @@ import Assets from './Assets';
 import Parking from './Parking';
 import Society from './Society';
 import Events from './Events';
+import ManageAdmin from './manage-admin';
+import ManageOwner from './manage-owner';
+import AdminList  from '../containers/AdminList';
 
 class Admin extends Component {
     render() {
         return (
             <div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-                <Jumbotron>
-                    <h1>  Admin Page</h1>
+                <div>
+                    <h1 className="text-center"> Admin Page</h1>
                     <Link to="/">
                         <Button bsStyle="primary">Home</Button>
                     </Link>
-                    <Link to="/admin">
-                        <Button bsStyle="primary">Dashboard</Button>
+                    <Link to="/dashboard">
+                        <Button bsStyle="primary">Dashbord</Button>
                     </Link>
-                </Jumbotron>
+                </div>
                 <Grid fluid >
                     <Row className="show-grid text-center">
-                        <Col lg={4} className="first-part">
+                        <Col lg={3} className="first-part">
                             <Route path="/admin" exact render={(props)=>{
                             return <AdminNavbar  navs={
                                 [
@@ -52,7 +55,7 @@ class Admin extends Component {
                                             linkText:'Money Management',
                                             icon:'inr'
                                     },{
-                                            linkPath:'/admin/society',
+                                            linkPath:'/admin/society/',
                                             linkText:'Society Management',
                                             icon:'home'
                                     }
@@ -60,32 +63,42 @@ class Admin extends Component {
                             }/> 
                         }}>
                             </Route>
-                            <Route path="/admin/society" exact render={(props)=>{
+
+                            <Route path="/admin/society/*" render={(props)=>{
                                 return <AdminNavbar  navs={
                                     [
                                         {
-                                                linkPath:'/admin/society/manage-admin',
+                                                linkPath:'/admin/society/manage-admin/',
                                                 linkText:'Admin Management ',
                                                 icon:'ic_aspect_ratio'
                                         },
                                         {
-                                                linkPath:'/admin/society/manage-owner',
+                                                linkPath:'/admin/society/manage-owner/',
                                                 linkText:'Owner Management',
                                                 icon:'car'
                                         }
                                     ]}/>
                                 }}>
                             </Route>
+
+                            
                         </Col >
                      
-                        <Col lg={7} >
+                        <Col lg={9} >
                           <div>
                             <Route path="/admin/vendor" component={Vendor} />
                             <Route path="/admin/parking" component={Parking} />
                             <Route path="/admin/assets" component={Assets} />
                             <Route path="/admin/event" component={Events} />
                             <Route path="/admin/money" component={Money} />
-                            <Route path="/admin/society" component={Society} />
+                            <Route path="/admin/society/" exact render={ ()=>{
+                                console.log("redirecting");
+                                return <Redirect to="/admin/society/manage-admin/" />
+                            }}/>
+                            <Route path='/admin/society/manage-admin/*' component={ManageAdmin}/>
+                            <Route path='/admin/society/manage-owner/*' component={ManageOwner}/>
+                        
+                            <Route exact path='/admin/society/manage-admin/view-admin' component={AdminList}/>
                             </div>
                             {/* <Route path="/authors" exact component={AuthorList} /> */}
                         </Col>

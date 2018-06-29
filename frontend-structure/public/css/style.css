@@ -51,3 +51,17 @@
 background-color:cyan;
 height:500px;
 }
+
+span{
+  color: white;
+  font-style: bold;
+   text-decoration-style: wavy;
+}
+
+a{
+  text-decoration: none !important;
+
+}
+.admin-nav-link:hover{
+  border-left:5px solid #00fdfd;
+}
