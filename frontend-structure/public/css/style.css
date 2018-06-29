@@ -65,3 +65,35 @@ a{
 .admin-nav-link:hover{
   border-left:5px solid #00fdfd;
 }
+
+/* COMPONENTS */
+.vendor{
+  background-color:cyan;
+  height:550px;
+font-size:18px;}
+
+.parking{
+  background-color:cyan;
+  height:500px;
+  font-size:18px;}
+
+.assets{
+  background-color:cyan;
+  height:500px;
+  font-size:18px;}
+
+.money{
+  background-color:cyan;
+  height:500px;
+  font-size:18px;}
+  
+.events{
+ background-color: cyan;
+ height: 500px;
+ font-size:18px;}
+
+.society{
+ background-color:cyan;
+ height:500px;
+ font-size:18px;}
+

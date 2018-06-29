@@ -21,7 +21,7 @@ class Admin extends Component {
                     <Link to="/">
                         <Button bsStyle="primary">Home</Button>
                     </Link>
-                    <Link to="/dashboard">
+                    <Link to="/admin">
                         <Button bsStyle="primary">Dashbord</Button>
                     </Link>
                 </div>
@@ -89,7 +89,7 @@ class Admin extends Component {
                             <Route path="/admin/vendor" component={Vendor} />
                             <Route path="/admin/parking" component={Parking} />
                             <Route path="/admin/assets" component={Assets} />
-                            <Route path="/admin/event" component={Events} />
+                            <Route path="/admin/events" component={Events} />
                             <Route path="/admin/money" component={Money} />
                             <Route path="/admin/society/" exact render={ ()=>{
                                 console.log("redirecting");
