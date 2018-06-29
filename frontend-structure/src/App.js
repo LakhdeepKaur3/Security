@@ -9,6 +9,9 @@ import {connect} from 'react-redux';
 import Login from './containers/Login';
 import Admin from './components/Admin';
 import * as actions from './store/actions';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import LoginPage from './components/Userlogin';
 
 const PrivateRoute = ({ component: Component,isAuthenticated, ...rest }) => (
   <Route {...rest} render={(props) => (
@@ -30,6 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Header />
           {/* {!this.props.isAuthenticated?
           [<NavLink to="/signup" className="nav-link" activeClassName="active">Sign up</NavLink>,
           <NavLink to="/login"  className="nav-link" activeClassName="active">Login</NavLink>
@@ -58,13 +62,17 @@ class App extends Component {
           <PrivateRoute path="/list" exact isAuthenticated={this.props.isAuthenticated} component={AdminList}/>
           <Route path="/home" component={Home}/>
           <Route path="/admin" component={Admin} />
+          <Route exact path="/" component={Home} />   
+          <Route exact path="/Userlogin" component={LoginPage}/>
           <Route  path="/dashboard" component={Admin} />
+
           <Route path="*" render={()=>{
             return (
               <div>Not Matched</div>
             )
           }}></Route>
         </Switch>
+        <Footer />
       </div>
     );
   }

@@ -66,34 +66,464 @@ a{
   border-left:5px solid #00fdfd;
 }
 
-/* COMPONENTS */
+
+
+/* ===================================
+HOMEPAGE
+====================================== */
+
+.img img{
+  height:auto;
+  width: 100%;
+}
+
+
+/* navabar */
+
+.navbar-brand {
+  color: #333;
+}
+
+
+.a {
+  color:red;
+  
+} 
+
+/* navigation */
+.item {
+  background: #2196F3;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: px;
+  padding: 10px;
+}
+
+.btns {
+margin-top: 20px;
+}
+
+.btn-add, 
+.btn-remove {
+background: #9E9E9E;
+color: #FFf;
+text-align: center;
+padding: 10px;
+}
+.btn-remove {
+  background: #F44336;
+}
+
+.anim_index {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 10px;
+  background: #e0e0e0;
+}
+.anim_index a {
+  background: #E91E63;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+
+
+/*=======================================
+              BASIC 
+========================================*/
+
+
+.basic-appear {
+opacity: 0.01;
+}
+
+.basic-appear.basic-appear-active {
+opacity: 1;
+transition: opacity .5s ease-in;
+}
+
+
+/* STARTING animation */ 
+.basic-enter {
+background: #3F51B5;
+}
+
+/* ENDING animation */
+.basic-enter.basic-enter-active {
+background: #2196F3;
+transition: all 500ms ease-in;
+} 
+
+.basic-leave {
+background: #2196F3;
+}
+
+.basic-leave.basic-leave-active {
+transform: translateX(-100%);
+background: #3F51B5;
+transition: all 500ms ease-in;
+}
+
+
+/* home */
+
+.home {
+  position: relative;
+}
+
+#nav li{
+  padding-right: 70px;
+}
+
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 20px;
+  line-height: 20px;
+  background-color: #333;
+  display: block;
+}
+
+/* =========================
+    REGISTRATION FROM
+============================= */
+
+.xerox{
+  /* background-image: url('flat.jpg'); */
+  border:1px solid black;
+  width: 100%;
+  margin-top: 2px;
+  background: gray
+}
+/* .container{
+  width: 950px;
+  height:50px;
+  background:transparent;
+  color: black;
+  top: 90%;
+  left: 40%;
+  position: relative;
+  transform: translate(-50% , -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+} */
+
+.container h1{
+  text-align: center;
+  margin: 20px;
+  
+  
+}
+
+.form-inline input[type="text"]{
+  margin:20px;
+  padding: 5px;
+  
+  
+  
+}
+.form-inline{
+  margin: 20px;
+  margin-bottom: -10px;
+}
+.form1-inline{
+  margin: 20px;
+  margin-bottom: 20px;
+}
+.form2-inline{
+  margin: 20px;
+}
+
+.form1-inline label{
+  margin-left: -5px 5px;
+  margin-top: 10px;
+}
+
+.form-inline p{
+  font-style: bold;
+}
+
+.submit button:hover{
+
+color:black;
+background: seagreen;
+}
+
+.submit1{
+  margin-left: 310px;
+}
+
+/* -------------slider---------------*/
+body {
+  width:100%;
+  margin: 0px;
+  padding:0px;
+  font-family: 'Roboto';
+  columns: #1b1b1b;
+}
+
+.flexbox_container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'Fjalla One';
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-family: 'Fjalla One';
+  font-size: 20px;
+  margin: 0px 0px 5px;
+}
+
+
+
+.item_slider {
+  height:350px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  font-family: 'Fjalla One';
+
+}
+
+.item_slider .caption {
+  color:rgb(2, 5, 8);
+  right:0px;
+  padding: 20px;
+  padding-right: 500px;
+  text-align:center;
+  width:80%;
+  text-transform: uppercase;
+}
+
+.item_slider .caption h4 {
+  font-size:50px;
+  font-weight: 300;
+  margin: 50px;
+  text-align: center !important;
+  padding-left: 200px;
+  font-family:Pacifico;
+  padding-top: 110px;
+ 
+}
+
+.prev, .next {
+  cursor:pointer;
+  position:absolute;
+  top: 50%;
+  width:auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+.prev:hover, .next:hover {
+  background-color: black;    
+}
+#navhome{
+  margin-top: 45px;
+}
+
+/* =====================================
+          Header/Footer  
+===================================== */
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+#HeaderNav{ 
+  height: 50px;
+  border-bottom: 1px solid black !important;
+}
+
+#HeaderNav .logo{
+  display: inline-block;
+  padding: 12px;
+  font-size: 22px;
+  font-family: Pacifico;
+}
+
+#TagineHeader{
+  color: black;
+}
+
+footer {
+  border-top:1px solid black !important;
+  height: 50px;
+  margin-bottom: 0px !important;
+}
+
+footer #copyright-text{
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;     
+}
+
+/* =====================================
+          USERLOGIN FORM
+===================================== */
+
+*{
+  box-sizing: border-box;
+  
+}
+
+
+.loginbackground {
+  margin:0px;
+  padding: 0px;
+  background-image: url('../images/flat.jpg');
+  background-size:cover;
+  background-position:center;
+  position: relative;
+  height: 100vh;
+}
+.loginbox{
+  width: 320px;
+  height: 420px;
+  background:black;
+  opacity: 0.5;
+  color:white;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  margin-top: 30px;
+
+}
+
+.login{
+  width: 40%;
+  height: 20%;
+  border-radius: 80%;
+  position: absolute;
+  top: -30px;
+  left: calc(45% - 50px);
+     
+}
+
+h1{
+  margin: 20px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+  color:white;
+}
+
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+  border:none;
+  border-bottom:  1px solid black;
+  background:transparent; 
+  outline: none;
+  height: 40px;
+  color:white;
+  font-size:16px;
+}
+.loginbox button[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 20px;
+  color: black
+}
+.loginbox button[type="submit"]:hover
+{
+  cursor: pointer;
+  background:green;
+  color:white;
+}
+
+.loginbox a{
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color:white;
+  font-weight: bold;
+}
+.loginbox a:hover
+{
+  color:black;
+
+}
+
 .vendor{
-  background-color:cyan;
-  height:550px;
-font-size:18px;}
+      background-color:cyan;
+      height:550px;
+    font-size:18px;}
 
 .parking{
-  background-color:cyan;
-  height:500px;
-  font-size:18px;}
+      background-color:cyan;
+      height:500px;
+      font-size:18px;}
 
 .assets{
-  background-color:cyan;
-  height:500px;
-  font-size:18px;}
+      background-color:cyan;
+      height:500px;
+      font-size:18px;}
 
 .money{
-  background-color:cyan;
-  height:500px;
-  font-size:18px;}
-  
+      background-color:cyan;
+      height:500px;
+      font-size:18px;}
+      
 .events{
- background-color: cyan;
- height: 500px;
- font-size:18px;}
+     background-color: cyan;
+     height: 500px;
+     font-size:18px;}
 
 .society{
- background-color:cyan;
- height:500px;
- font-size:18px;}
+     background-color:cyan;
+     height:500px;
+     font-size:18px;}
+
+
 

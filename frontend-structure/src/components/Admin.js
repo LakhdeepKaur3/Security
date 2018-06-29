@@ -27,7 +27,7 @@ class Admin extends Component {
                 </div>
                 <Grid fluid >
                     <Row className="show-grid text-center">
-                        <Col lg={3} className="first-part">
+                        <Col lg={4} className="first-part">
                             <Route path="/admin" exact render={(props)=>{
                             return <AdminNavbar  navs={
                                 [
@@ -84,7 +84,7 @@ class Admin extends Component {
                             
                         </Col >
                      
-                        <Col lg={9} >
+                        <Col lg={8} >
                           <div>
                             <Route path="/admin/vendor" component={Vendor} />
                             <Route path="/admin/parking" component={Parking} />
