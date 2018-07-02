@@ -11,7 +11,7 @@ class ManageAdmin extends Component {
                     <ul className="navbar-nav mx-auto">
                         <div className="btn-grid">
                         <li class="nav-item">
-                        <Link to="/add"  class="nav-link btn btn-outline-info btn-lg">
+                        <Link to="/admin/society/manage-admin/add"  class="nav-link btn btn-outline-info btn-lg">
                           ADD ADMIN
                         </Link>
                             </li>

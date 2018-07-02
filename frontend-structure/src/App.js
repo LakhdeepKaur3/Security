@@ -65,6 +65,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />   
           <Route exact path="/Userlogin" component={LoginPage}/>
           <Route  path="/dashboard" component={Admin} />
+          
 
           <Route path="*" render={()=>{
             return (

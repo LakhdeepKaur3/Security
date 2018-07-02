@@ -12,6 +12,8 @@ import ManageAdmin from './manage-admin';
 import ManageOwner from './manage-owner';
 import AdminList  from '../containers/AdminList';
 
+import AddAdmin from   '../components/AdminAdd';
+
 class Admin extends Component {
     render() {
         return (
@@ -99,6 +101,7 @@ class Admin extends Component {
                             <Route path='/admin/society/manage-owner/*' component={ManageOwner}/>
                         
                             <Route exact path='/admin/society/manage-admin/view-admin' component={AdminList}/>
+                            <Route path = "/admin/society/manage-admin/add" component ={AddAdmin} />
                             </div>
                             {/* <Route path="/authors" exact component={AuthorList} /> */}
                         </Col>
