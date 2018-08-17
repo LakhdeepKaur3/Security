@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+
+
+    "home": {
+      "slider": [
+        {
+          "id": "1",
+          "cover": "security1.jpg",
+          "topic": "",
+          "title": ""
+        },
+        {
+          "id": "2",
+          "cover": "security2.jpg",
+          "topic": "",
+          "title": ""
+        },
+        {
+          "id": "3",
+          "cover": "security3.jpg",
+          "topic": "",
+          "title": ""
+        },
+        {
+          "id": "4",
+          "cover": "security4.jpg",
+          "topic": "",
+          "title": ""
+        }
+      ]
+    }
+  
+  
+      
+}

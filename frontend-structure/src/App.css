@@ -1,0 +1,39 @@
+
+.tablelist{
+  padding-bottom:10px;
+    
+}
+#admin-list-wrapper{
+  background-image: url('texture-background-21.jpg');
+}
+
+.table-div{
+  min-height:  200px;
+  max-height: 370px;
+  overflow: auto;
+}
+
+
+.tablehover{
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2) ;
+}
+.tablehover:hover{
+ background-image: url('background-textures-5.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+  
+}
+thead{
+  border: 3px solid rgb(158, 158, 158);
+  
+}
+
+.modal-title{
+  margin:auto;
+  font-weight: bold;
+}
+.modal-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
